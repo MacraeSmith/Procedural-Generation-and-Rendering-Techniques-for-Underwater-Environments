@@ -44,7 +44,7 @@ or
 
 
 
-Open the ThesisArtifact Solution in Visual Studio 2022 and press ctrl + shift + B to build, and then F5 to play the game. 
+Open the ThesisArtifact Solution in Visual Studio 2022 and press ctrl + shift + B to build, and then F5 to play the game. Best performance requires the RELEASE or FAST\_BREAK build configurations. 
 
 
 
