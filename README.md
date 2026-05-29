@@ -66,8 +66,8 @@ For a detailed breakdown of the architecture, rendering systems, procedural gene
 
 Recommended build configurations:
 
-* Release
-* Fast_Break
+* ```Release```
+* ```Fast_Break```
 
 ---
 
