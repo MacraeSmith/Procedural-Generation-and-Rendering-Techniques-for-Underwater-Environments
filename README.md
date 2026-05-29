@@ -50,7 +50,7 @@ ThesisArtifact/Run/ThesisArtifact_Release_x64.exe
 
 2. Configure the debugger settings:
 
-   * Right-click the **SimpleMiner** project and select **Properties**
+   * Right-click the **ThesisArtifact** project and select **Properties**
    * Navigate to **Configuration Properties > Debugging**
    * Set:
 
