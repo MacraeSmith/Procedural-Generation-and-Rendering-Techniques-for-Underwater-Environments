@@ -36,6 +36,50 @@ For a detailed breakdown of the architecture, rendering systems, procedural gene
 * Boid-Based AI
 
 ---
+## Running the Project
+
+### Launch Prebuilt Executable
+
+```text
+ThesisArtifact/Run/ThesisArtifact_Release_x64.exe
+```
+
+### Build From Source
+
+1. Open `ThesisArtiface/ThesisArtifact.sln` in Visual Studio 2022.
+
+2. Configure the debugger settings:
+
+   * Right-click the **SimpleMiner** project and select **Properties**
+   * Navigate to **Configuration Properties > Debugging**
+   * Set:
+
+   ```text
+   Command:            $(TargetFileName)
+   Working Directory:  $(SolutionDir)Run/
+   ```
+     <p align="center">
+      <img src="Media/ConfigurationSettings.png" width="80%">
+    </p>
+
+3. Build the solution:
+
+   ```text
+   Ctrl + Shift + B
+   ```
+
+4. Run the project:
+
+   ```text
+   F5
+   ```
+
+Recommended build configurations:
+
+* Release
+* Fast_Break
+
+---
 
 ## Key Features
 
@@ -85,36 +129,6 @@ For a detailed breakdown of the architecture, rendering systems, procedural gene
 <p align="center">
   <img src="Media/CoverImage_005.png" width="90%">
 </p>
-
----
-
-## Running the Project
-
-### Launch Prebuilt Executable
-
-```text
-ThesisArtifact/Run/ThesisArtifact_Release_x64.exe
-```
-
-### Build From Source
-
-1. Open the solution in Visual Studio 2022
-2. Build:
-
-```text
-Ctrl + Shift + B
-```
-
-3. Run:
-
-```text
-F5
-```
-
-Recommended build configurations:
-
-* Release
-* Fast_Break
 
 ---
 
