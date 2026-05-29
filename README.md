@@ -81,57 +81,6 @@ Recommended build configurations:
 
 ---
 
-## Key Features
-
-### Procedural Terrain Generation
-
-* Layered noise-based terrain generation
-* Biome blending and variation
-* Dynamic mesh generation
-* Configurable world size and voxel resolution
-
-### Infinite World Streaming
-
-* Chunk-based world architecture
-* Multithreaded generation pipeline
-* Dynamic loading and unloading of terrain
-
-### Advanced Underwater Rendering
-
-* Water surface simulation
-* Reflections and refractions
-* Underwater light attenuation
-* Caustics and volumetric light rays
-* Atmospheric fog systems
-
-### Procedural Ecosystem
-
-* Boid-based fish schooling behaviors
-* Procedural vegetation placement
-* Coral generation and distribution
-* Environment-aware spawning systems
-
-### Real-Time Editor
-
-* Full ImGui-based editing tools
-* Live parameter adjustment
-* Save and load world configurations
-* Rapid iteration workflow
-
----
-
-## Screenshots
-
-<p align="center">
-  <img src="Media/CoverImage_003.png" width="90%">
-</p>
-
-<p align="center">
-  <img src="Media/CoverImage_005.png" width="90%">
-</p>
-
----
-
 ## Controls
 
 ### General
@@ -180,6 +129,57 @@ Available Modes:
 | Tab         | Toggle Mouse Visibility     |
 | O           | Step Forward One Frame      |
 | ~           | Developer Console           |
+
+---
+
+## Screenshots
+
+<p align="center">
+  <img src="Media/CoverImage_003.png" width="90%">
+</p>
+
+<p align="center">
+  <img src="Media/CoverImage_005.png" width="90%">
+</p>
+
+---
+
+## Key Features
+
+### Procedural Terrain Generation
+
+* Layered noise-based terrain generation
+* Biome blending and variation
+* Dynamic mesh generation
+* Configurable world size and voxel resolution
+
+### Infinite World Streaming
+
+* Chunk-based world architecture
+* Multithreaded generation pipeline
+* Dynamic loading and unloading of terrain
+
+### Advanced Underwater Rendering
+
+* Water surface simulation
+* Reflections and refractions
+* Underwater light attenuation
+* Caustics and volumetric light rays
+* Atmospheric fog systems
+
+### Procedural Ecosystem
+
+* Boid-based fish schooling behaviors
+* Procedural vegetation placement
+* Coral generation and distribution
+* Environment-aware spawning systems
+
+### Real-Time Editor
+
+* Full ImGui-based editing tools
+* Live parameter adjustment
+* Save and load world configurations
+* Rapid iteration workflow
 
 ---
 
