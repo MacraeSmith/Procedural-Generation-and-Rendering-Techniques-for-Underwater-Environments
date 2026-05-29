@@ -60,17 +60,9 @@ For a detailed breakdown of the architecture, rendering systems, procedural gene
       <img src="Media/ConfigurationSettings.png" width="80%">
     </p>
 
-3. Build the solution:
+3. Build the solution: ```Ctrl + Shift + B```
 
-   ```text
-   Ctrl + Shift + B
-   ```
-
-4. Run the project:
-
-   ```text
-   F5
-   ```
+4. Run the project: ```F5 ```
 
 Recommended build configurations:
 
