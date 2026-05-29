@@ -42,7 +42,7 @@ For a detailed breakdown of the architecture, rendering systems, procedural gene
 
 ```ThesisArtifact/Run/ThesisArtifact_Release_x64.exe```
 
-### Build From Source
+### Or Build From Source
 
 1. Open `ThesisArtifact/ThesisArtifact.sln` in Visual Studio 2022.
 
