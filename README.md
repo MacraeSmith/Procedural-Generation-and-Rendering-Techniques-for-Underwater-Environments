@@ -1,312 +1,406 @@
-## **Procedural Generation and Rendering Techniques for Underwater Environments**
+## **# Procedural Generation and Rendering Techniques for Underwater Environments**
 
+## 
 
+## **## Overview**
 
-\---------------------------------------------------------------------------------------------------------------------------------
+## 
 
-#### **Description:**
+## **This project was developed as my Master's Thesis at SMU Guildhall and was built entirely in a custom C++ game engine.**
 
-\---------------------------------------------------------------------------------------------------------------------------------
+## 
 
+## **The project explores the procedural generation and real-time rendering of large-scale underwater environments. Terrain is generated from layered noise functions and converted into 3D geometry, creating natural underwater formations and landscapes.**
 
+## 
 
-This project is my Master's Thesis during my time at SMU Guildhall. The artifact is built entirely within my custom C++ game engine and focuses on creating a real-time, procedurally generated underwater world. Terrain is generated using layered noise and converted into 3D geometry, enabling complex natural features to emerge.
+## **A chunk-based multithreaded streaming system allows the world to generate and update dynamically, enabling effectively endless exploration. The environment is brought to life through advanced rendering techniques, procedural vegetation, and boid-driven fish AI.**
 
+## 
 
+## **### Technical Breakdown**
 
-The world streams dynamically through a chunk-based, multithreaded system, allowing for an effectively endless environment. Rendering techniques simulate water, lighting, and atmospheric effects, while boid-based fish and procedural vegetation add motion and life.
+## 
 
+## [**Procedural Underwater Environments**](https://www.macraesmith.com/projects/thesis)
 
+## 
 
-An in-engine ImGui editor exposes all major parameters for real-time editing and iteration.
+## **### Technologies**
 
-For a more in-depth explanation of how I created all of the systems, please visit my portfolio [Underwater Environments](https://www.macraesmith.com/projects/thesis).
+## 
 
+## **\* C++**
 
+## **\* DirectX 12**
 
+## **\* HLSL**
 
+## **\* ImGui**
 
+## **\* Custom Game Engine**
 
+## **\* Multi-threaded Job System**
 
+## **\* Procedural Generation**
 
+## **\* Boid-Based AI**
 
-\---------------------------------------------------------------------------------------------------------------------------------
+## 
 
-#### **Run Instructions**
+## **---**
 
-\---------------------------------------------------------------------------------------------------------------------------------
+## 
 
-Open up the ThesisArtifact\_Release\_x64.exe file in the ThesisArtifact/Run folder to launch the game
+## **## Key Features**
 
+## 
 
+## **### Procedural Terrain Generation**
 
-or
+## 
 
+## **\* Layered noise-based terrain generation**
 
+## **\* Biome blending and variation**
 
-Open the ThesisArtifact Solution in Visual Studio 2022 and press ctrl + shift + B to build, and then F5 to play the game. Best performance requires the RELEASE or FAST\_BREAK build configurations. 
+## **\* Dynamic mesh generation**
 
+## **\* Configurable world size and voxel resolution**
 
+## 
 
+## **### Infinite World Streaming**
 
+## 
 
+## **\* Chunk-based world architecture**
 
+## **\* Multithreaded generation pipeline**
 
+## **\* Dynamic loading and unloading of terrain**
 
+## 
 
-\---------------------------------------------------------------------------------------------------------------------------------
+## **### Advanced Underwater Rendering**
 
-#### **Controls**
+## 
 
-\---------------------------------------------------------------------------------------------------------------------------------
+## **\* Water surface simulation**
 
+## **\* Reflections and refractions**
 
+## **\* Underwater light attenuation**
 
-\----------------**Navigation**------------------
+## **\* Caustics and volumetric light rays**
 
-\[SPACE]			Enter Artifact
+## **\* Atmospheric fog systems**
 
-\[ESC]			Exit
+## 
 
-\[P]			Pause
+## **### Procedural Ecosystem**
 
+## 
 
+## **\* Boid-based fish schooling behaviors**
 
+## **\* Procedural vegetation placement**
 
+## **\* Coral generation and distribution**
 
-\-------------------**Debug**--------------------
+## **\* Environment-aware spawning systems**
 
+## 
 
+## **### Real-Time Editor**
 
-\[F1]                    Toggle Debug Messages
+## 
 
+## **\* Full ImGui-based editing tools**
 
+## **\* Live parameter adjustment**
 
-\[F2]                    Chunk Debug Views
+## **\* Save and load world configurations**
 
-&#x20;                       - Mesh Chunks
+## **\* Rapid iteration workflow**
 
-&#x20;                       - All Chunks
+## 
 
-&#x20;                       - Wireframe
+## **---**
 
-&#x20;                       - Fish Radii
+## 
 
+## **## Screenshots**
 
+## 
 
-\[F3]                    Toggle Chunk Loading
+## **!\[CoverImage\_001](Media/CoverImage\_001.png)**
 
-\[F5]                    Job and Memory Stats
+## **!\[CoverImage\_003](Media/CoverImage\_003.png)**
 
-\[F8]                    Reload World
 
-\[0-9]                   Render Modes 0 - 9
 
-\[SHIFT] + \[0-9]         Render Modes 10 - 19
+## **---**
 
-\[ARROWS]                Directional Light Direction
+## 
 
-\[TAB]                   Mouse Visibility
+## **## Running the Project**
 
+## 
 
+## **### Option 1 - Executable**
 
-\[C]                     Change Camera / Physics Mode
+## 
 
-&#x20;                       - Free Fly
+## **Launch:**
 
-&#x20;                       - No Clip
+## 
 
-&#x20;                       - World Aligned
+## **```text**
 
-&#x20;                       - Frustum Cull
+## **ThesisArtifact/Run/ThesisArtifact\_Release\_x64.exe**
 
+## **```**
 
+## 
 
-\[O]			Step Forward One Frame
+## **### Option 2 - Build From Source**
 
-\[\~]			Open Dev Console
+## 
 
+## **1. Open the solution in Visual Studio 2022**
 
+## **2. Build using:**
 
-\-----------------**Movement**--------------------
+## 
 
+## **```text**
 
+## **Ctrl + Shift + B**
 
-\[WASD]                  Move
+## **```**
 
-\[E / F]                 Move Up and Down
+## 
 
-\[MOUSE]                 Look Around
+## **3. Run using:**
 
-\[SHIFT]                 Sprint
+## 
 
-\[SHIFT] + \[MOUSE WHEEL] Change Sprint Speed
+## **```text**
 
+## **F5**
 
+## **```**
 
+## 
 
+## **For best performance use:**
 
+## 
 
+## **\* Release**
 
+## **\* Fast\_Break**
 
+## 
 
+## **---**
 
+## 
 
-\---------------------------------------------------------------------------------------------------------------------------------
+## **## Controls**
 
-#### **ImGui Main Features by Tab:**
+## 
 
-\---------------------------------------------------------------------------------------------------------------------------------
+## **### General**
 
+## 
 
+## **| Key   | Action         |**
 
-\---------------**Load Worlds**-------------------
+## **| ----- | -------------- |**
 
-Handles world state management.
+## **| Space | Enter Artifact |**
 
+## **| Esc   | Exit           |**
 
+## **| P     | Pause          |**
 
-\-Generate or rebuild the world using current settings
+## 
 
-\-Reset to default configuration
+## **### Movement**
 
-\-Load recent unsaved world states
+## 
 
-\-Save and load worlds using XML files
+## **| Key                 | Action              |**
 
+## **| ------------------- | ------------------- |**
 
+## **| WASD                | Move                |**
 
-This tab is the entry point for applying changes made elsewhere in the editor.
+## **| E / F               | Move Up / Down      |**
 
+## **| Mouse               | Look Around         |**
 
+## **| Shift               | Sprint              |**
 
-\-----------------**Terrain**---------------------
+## **| Shift + Mouse Wheel | Adjust Sprint Speed |**
 
-Controls procedural terrain generation.
+## 
 
+## **### Camera Modes**
 
+## 
 
-\-World size, height, and voxel resolution
+## **| Key | Action             |**
 
-\-Noise layers for shaping terrain (scale, octaves, strength, etc.)
+## **| --- | ------------------ |**
 
-\-Biome blending and variation
+## **| C   | Change Camera Mode |**
 
-\-Texture assignment per biome (floor and walls)
+## 
 
+## **Modes:**
 
+## 
 
-Changes here affect the structure and visual composition of the world geometry.
+## **\* Free Fly**
 
+## **\* No Clip**
 
+## **\* World Aligned**
 
+## **\* Frustum Cull**
 
+## 
 
-\-------------**Water And Wind**------------------
+## **### Debug**
 
-Controls ocean and current behavior.
+## 
 
+## **| Key         | Action               |**
 
+## **| ----------- | -------------------- |**
 
-\-Ocean surface properties (waves, foam, reflection, refraction)
+## **| F1          | Debug Messages       |**
 
-\-Fine-tuned wave simulation using multiple layered waves
+## **| F2          | Chunk Debug Views    |**
 
-\-Directional and procedural wind/current systems
+## **| F3          | Toggle Chunk Loading |**
 
+## **| F5          | Job and Memory Stats |**
 
+## **| F8          | Reload World         |**
 
-This section defines both visual water appearance and environmental motion.
+## **| 0-9         | Render Modes 0-9     |**
 
+## **| Shift + 0-9 | Render Modes 10-19   |**
 
+## **| Arrows      | Directional Light    |**
 
+## **| Tab         | Mouse Visibility     |**
 
+## **| O           | Step One Frame       |**
 
-\-------------**Lightning and Fog**---------------
+## **| \~           | Developer Console    |**
 
-Controls overall scene lighting and atmospheric effects.
+## 
 
+## **---**
 
+## 
 
-\-Sun direction, intensity, and color
+## **## Editor Features**
 
-\-Ambient lighting
+## 
 
-\-Underwater attenuation and color absorption
+## **### Load Worlds**
 
-\-Fog above and below water
+## 
 
-\-Caustics, light rays, and particle effects
+## **\* Generate worlds**
 
+## **\* Save and load XML configurations**
 
+## **\* Restore previous states**
 
-These settings strongly influence mood, visibility, and realism.
+## 
 
+## **### Terrain**
 
+## 
 
+## **\* Terrain generation settings**
 
+## **\* Biome controls**
 
-\----------------**Vegetation**------------------
+## **\* Texture assignment**
 
-Controls procedural placement and appearance of plant life.
+## 
 
+## **### Water and Wind**
 
+## 
 
-\-Enable or disable vegetation globally
+## **\* Wave simulation**
 
-\-Configure individual vegetation types (size, density, placement rules)
+## **\* Ocean rendering**
 
-\-Coral-specific controls and blending behavior
+## **\* Current systems**
 
-\-Noise-based distribution for natural variation
+## 
 
+## **### Lighting and Fog**
 
+## 
 
-This system determines how life populates the terrain.
+## **\* Sun and ambient lighting**
 
+## **\* Underwater attenuation**
 
+## **\* Fog and atmospheric effects**
 
+## **\* Caustics and light rays**
 
+## 
 
-\-------------------**Fish**---------------------
+## **### Vegetation**
 
-Controls AI and spawning behavior for aquatic life.
+## 
 
+## **\* Procedural placement**
 
+## **\* Density controls**
 
-\-Global fish limits and performance constraints
+## **\* Coral systems**
 
-\-Per-species behavior settings:
+## 
 
-&#x09;-Movement (speed, turning)
+## **### Fish AI**
 
-&#x09;-Schooling (cohesion, alignment, separation)
+## 
 
-&#x09;-Terrain avoidance
+## **\* Schooling behavior**
 
-&#x09;-Interaction with the player
+## **\* Movement tuning**
 
+## **\* Terrain avoidance**
 
+## **\* Player interaction**
 
-This tab governs dynamic ecosystem behavior.
+## 
 
+## **### Debug Rendering**
 
+## 
 
+## **\* Albedo visualization**
 
+## **\* Normal visualization**
 
-\---------------**Debug Render**-----------------
+## **\* Depth visualization**
 
-Provides visualization tools for rendering diagnostics.
+## **\* Lighting diagnostics**
 
-
-
-\-Switch between different shader outputs (albedo, normals, depth, etc.)
-
-\-Inspect internal rendering data such as biome weights and lighting
-
-
-
-Used primarily for debugging graphics and shading.
-
-
+## 
 
